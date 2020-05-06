@@ -84,4 +84,4 @@ class _ViewRestrictionState extends State<ViewRestriction> {
 
 **Screenshots**
 
-![selected date](http://www.syncfusion.com/uploads/user/kb/flut/flut-856/flut-856_img1.png)
+<img alt="selected date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-856/flut-856_img1.png" width="250" height="250" />|
