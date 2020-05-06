@@ -80,3 +80,8 @@ class _ViewRestrictionState extends State<ViewRestriction> {
   }
 }
 ```
+**[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/11329/how-to-restrict-date-range-picker-within-the-date-limit-in-flutter-date-range-picker)**
+
+**Screenshots**
+
+![selected date](http://www.syncfusion.com/uploads/user/kb/flut/flut-856/flut-856_img1.png)
