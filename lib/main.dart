@@ -32,13 +32,14 @@ class _ViewRestrictionState extends State<ViewRestriction> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Card(
-      margin: const EdgeInsets.fromLTRB(40, 150, 40, 150),
-      child: SfDateRangePicker(
-        view: DateRangePickerView.month,
-        minDate: _minDate,
-        maxDate: _maxDate,
+      body: Card(
+        margin: const EdgeInsets.fromLTRB(40, 150, 40, 150),
+        child: SfDateRangePicker(
+          view: DateRangePickerView.month,
+          minDate: _minDate,
+          maxDate: _maxDate,
+        ),
       ),
-    ));
+    );
   }
 }
