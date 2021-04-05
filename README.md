@@ -6,14 +6,14 @@ In the flutter date range picker, you can restrict the swiping behavior using th
 In initState(), set the default values for min and max dates.
 
 ```xml
-DateTime _minDate, _maxDate;
- 
+late DateTime _minDate, _maxDate;
+
 @override
 void initState() {
-  _minDate=DateTime(2020,3, 5,9,0,0);
-  _maxDate=DateTime(2020,3,25,9,0,0);
+  _minDate = DateTime(2020, 3, 5, 9, 0, 0);
+  _maxDate = DateTime(2020, 3, 25, 9, 0, 0);
   super.initState();
-} 
+}
 ```
 ## Step 2:
 Place the date picker inside the body of the Scaffold widget with the mentioned min and max date.
@@ -56,12 +56,12 @@ class ViewRestriction extends StatefulWidget {
 }
  
 class _ViewRestrictionState extends State<ViewRestriction> {
-  DateTime _minDate, _maxDate;
- 
+  late DateTime _minDate, _maxDate;
+
   @override
   void initState() {
-    _minDate=DateTime(2020,3, 5,9,0,0);
-    _maxDate=DateTime(2020,3,25,9,0,0);
+    _minDate = DateTime(2020, 3, 5, 9, 0, 0);
+    _maxDate = DateTime(2020, 3, 25, 9, 0, 0);
     super.initState();
   }
  
