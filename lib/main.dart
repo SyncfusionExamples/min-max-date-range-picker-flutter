@@ -8,7 +8,7 @@ class SwipeRestriction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false ,
+      debugShowCheckedModeBanner: false,
       home: ViewRestriction(),
     );
   }
@@ -20,15 +20,12 @@ class ViewRestriction extends StatefulWidget {
 }
 
 class _ViewRestrictionState extends State<ViewRestriction> {
-  DateRangePickerController _controller;
-  DateTime _minDate, _maxDate;
+  late DateTime _minDate, _maxDate;
 
   @override
   void initState() {
-    // TODO: implement initState
-    _controller = DateRangePickerController();
-    _minDate=DateTime(2020,3, 5,9,0,0);
-    _maxDate=DateTime(2020,3,25,9,0,0);
+    _minDate = DateTime(2020, 3, 5, 9, 0, 0);
+    _maxDate = DateTime(2020, 3, 25, 9, 0, 0);
     super.initState();
   }
 
@@ -36,13 +33,12 @@ class _ViewRestrictionState extends State<ViewRestriction> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Card(
-          margin: const EdgeInsets.fromLTRB(40, 150, 40, 150),
-          child: SfDateRangePicker(
-            view: DateRangePickerView.month,
-            minDate: _minDate,
-            maxDate: _maxDate,
-          ),
-        )
-    );
+      margin: const EdgeInsets.fromLTRB(40, 150, 40, 150),
+      child: SfDateRangePicker(
+        view: DateRangePickerView.month,
+        minDate: _minDate,
+        maxDate: _maxDate,
+      ),
+    ));
   }
 }
